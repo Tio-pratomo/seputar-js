@@ -12,7 +12,7 @@ Materi ini merupakan catatan pribadi dari saya melihat video di youtube. Anda bi
 
 [Docusaurus Video Tutorial](https://www.youtube.com/watch?v=QfqLQwPxFWw&t=123s)
 
-Lalu materi tersebut menjadi 7 sesi catatan, untuk pembelajaran yang mudah diikuti. Anda bisa lihat materinya di sidebar.
+Lalu materi tersebut menjadi 8 sesi catatan, untuk pembelajaran yang mudah diikuti. Anda bisa lihat materinya di sidebar.
 
 ### Daftar Sesi
 
@@ -36,11 +36,15 @@ Lalu materi tersebut menjadi 7 sesi catatan, untuk pembelajaran yang mudah diiku
 
   _Membedah file konfigurasi utama, mengatur metadata, navbar, footer, dan menonaktifkan modul._
 
-- **[Sesi 6: Menambahkan Fitur Pencarian (Search)](./006.fitur-search.md)**
+- **[Sesi 6: Docs multi instance](./006.docs-multi-instance.md)**
+
+  _Mempelajari cara menggunakan beberapa instansi dokumentasi (docs multi-instance) untuk mengelola kumpulan dokumen yang terpisah, seperti untuk produk yang berbeda atau untuk memisahkan dokumentasi berversi dan tidak berversi._
+
+- **[Sesi 7: Fitur Search](./007.fitur-search.md)**
 
   _Menginstal dan mengonfigurasi plugin pencarian lokal untuk meningkatkan pengalaman pengguna._
 
-- **[Sesi 7: Deployment dengan Git dan GitHub Pages](./007.deployment.md)**
+- **[Sesi 8: Deployment dengan Git dan GitHub Pages](./008.deployment.md)**
 
   _Mempublikasikan situs Anda ke internet menggunakan Git, GitHub, dan otomatisasi dengan GitHub Actions._
 
