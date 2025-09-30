@@ -11,7 +11,8 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Seputar JS",
-  tagline: "Panduan belajar JavaScript modern, dari dasar hingga mahir.",
+  tagline:
+    "Panduan seputar teknologi JavaScript yang modern, dari dasar hingga mahir.",
   favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -35,7 +36,6 @@ const config = {
   projectName: "docusaurus", // Usually your repo name.
 
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -43,6 +43,12 @@ const config = {
   i18n: {
     defaultLocale: "id",
     locales: ["en", "id"],
+  },
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: "warn",
+    },
   },
 
   presets: [
@@ -86,10 +92,10 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "My Site",
+        title: "SeputarJS",
         logo: {
           alt: "My Site Logo",
-          src: "img/logo.svg",
+          src: "img/seputar-js.svg",
         },
         items: [
           {
@@ -115,7 +121,11 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
+                label: "Docusaurus",
+                to: "/docusaurus/intro",
+              },
+              {
+                label: "Vite JS",
                 to: "/vite/intro",
               },
             ],
