@@ -95,6 +95,15 @@ const config = {
         sidebarPath: "./webpackSidebars.js",
       },
     ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "parcel",
+        path: "parcel",
+        routeBasePath: "parcel",
+        sidebarPath: "./parcelSidebars.js",
+      },
+    ],
   ],
 
   themeConfig:
@@ -129,6 +138,13 @@ const config = {
             position: "left",
             label: "Webpack",
             docsPluginId: "webpack",
+          },
+          {
+            type: "docSidebar",
+            sidebarId: "parcelSidebar",
+            position: "left",
+            label: "Parcel JS",
+            docsPluginId: "parcel",
           },
         ],
       },
