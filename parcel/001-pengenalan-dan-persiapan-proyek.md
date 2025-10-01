@@ -124,7 +124,7 @@ Menggunakan `npx` sangat praktis, tetapi untuk proyek sungguhan, lebih baik meng
     npm init -y
     ```
 
-3.  Instal `parcel-bundler` sebagai _dev dependency_ (paket yang hanya dibutuhkan selama pengembangan).
+3.  Instal `parcel` sebagai _dev dependency_ (paket yang hanya dibutuhkan selama pengembangan).
 
     ```bash
     npm install --save-dev parcel
