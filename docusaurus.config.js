@@ -41,14 +41,17 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "id",
-    locales: ["en", "id"],
+    locales: ["id"],
   },
 
   markdown: {
+    mermaid: true,
     hooks: {
       onBrokenMarkdownLinks: "warn",
     },
   },
+
+  themes: ["@docusaurus/theme-mermaid"],
 
   presets: [
     [
@@ -83,6 +86,15 @@ const config = {
         sidebarPath: "./docusaurusSidebars.js",
       },
     ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "webpack",
+        path: "webpack",
+        routeBasePath: "webpack",
+        sidebarPath: "./webpackSidebars.js",
+      },
+    ],
   ],
 
   themeConfig:
@@ -111,6 +123,13 @@ const config = {
             label: "Vite",
             docsPluginId: "vite",
           },
+          {
+            type: "docSidebar",
+            sidebarId: "webpackSidebar",
+            position: "left",
+            label: "Webpack",
+            docsPluginId: "webpack",
+          },
         ],
       },
       footer: {
@@ -130,19 +149,19 @@ const config = {
             ],
           },
           {
-            title: "Community",
+            title: "Bacaan Lainnya",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                label: "Belajar HTML, CSS,Git",
+                href: "https://html-css-git-tutorial.vercel.app/",
               },
               {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                label: "Belajar Hugo SSG",
+                href: "https://tio-pratomo.github.io/learn-hugo/",
               },
               {
-                label: "X",
-                href: "https://x.com/docusaurus",
+                label: "Cara Pakai Utility Javascript",
+                href: "https://tio-pratomo.github.io/utility-js/",
               },
             ],
           },
@@ -151,7 +170,7 @@ const config = {
             items: [
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/Tio-pratomo/seputar-js/tree/main",
               },
             ],
           },
