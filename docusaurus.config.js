@@ -136,7 +136,7 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "Materi Tersedia",
             items: [
               {
                 label: "Docusaurus",
@@ -145,6 +145,10 @@ const config = {
               {
                 label: "Vite JS",
                 to: "/vite/intro",
+              },
+              {
+                label: "Webpack",
+                to: "/webpack/intro",
               },
             ],
           },
@@ -166,7 +170,7 @@ const config = {
             ],
           },
           {
-            title: "More",
+            title: "Lainnya",
             items: [
               {
                 label: "GitHub",
