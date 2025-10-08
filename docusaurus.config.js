@@ -104,6 +104,24 @@ const config = {
         sidebarPath: "./parcelSidebars.js",
       },
     ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "docsify",
+        path: "docsify",
+        routeBasePath: "docsify",
+        sidebarPath: "./docsifySidebars.js",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "regex",
+        path: "regex",
+        routeBasePath: "regex",
+        sidebarPath: "./regexSidebars.js",
+      },
+    ],
   ],
 
   themeConfig:
@@ -146,6 +164,20 @@ const config = {
             label: "Parcel JS",
             docsPluginId: "parcel",
           },
+          {
+            type: "docSidebar",
+            sidebarId: "docsifySidebar",
+            position: "left",
+            label: "Docsify",
+            docsPluginId: "docsify",
+          },
+          {
+            type: "docSidebar",
+            sidebarId: "regexSidebar",
+            position: "left",
+            label: "Regex",
+            docsPluginId: "regex",
+          },
         ],
       },
       footer: {
@@ -165,6 +197,14 @@ const config = {
               {
                 label: "Webpack",
                 to: "/webpack/intro",
+              },
+              {
+                label: "Docsify",
+                to: "/docsify/intro",
+              },
+              {
+                label: "Regex",
+                to: "/regex/intro",
               },
             ],
           },
