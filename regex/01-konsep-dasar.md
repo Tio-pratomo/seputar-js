@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Sesi 1: Konsep Inti & Sintaks Dasar
+# Konsep Inti & Sintaks Dasar
 
 Selamat datang di sesi pertama pembelajaran Regular Expression (Regex)! Di sini, kita akan memulai perjalanan dari konsep paling dasar yang menjadi fondasi utama dalam menggunakan Regex.
 
