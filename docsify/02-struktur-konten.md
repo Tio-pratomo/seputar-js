@@ -36,11 +36,13 @@ Saat Anda menjalankan `docsify init ./docs`, Docsify membuat beberapa file penti
     </head>
     <body>
       <div id="app"></div>
+      <!-- highlight-start -->
       <script>
         window.$docsify = {
           // ... konfigurasi Docsify Anda di sini ...
         };
       </script>
+      <!-- highlight-end -->
       <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
     </body>
   </html>
@@ -96,11 +98,8 @@ Docsify mendukung sintaks Markdown standar. Anda bisa menggunakan:
   ````
   ```javascript
   console.log('Hello Docsify!');
+  ```
   ````
-
-  ```
-
-  ```
 
 - Dan banyak lagi sintaks Markdown lainnya.
 

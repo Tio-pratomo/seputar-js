@@ -36,7 +36,9 @@ Untuk mempermudah proses inisialisasi dan pratinjau, sangat disarankan untuk men
 npm i docsify-cli -g
 ```
 
-> **Catatan**: Anda harus sudah memiliki [Node.js](https://nodejs.org/) dan npm yang terinstal di sistem Anda untuk menjalankan perintah ini.
+:::info[**Catatan**:]
+Anda harus sudah memiliki [Node.js](https://nodejs.org/) dan npm yang terinstal di sistem Anda untuk menjalankan perintah ini.
+:::
 
 `docsify-cli` adalah alat bantu baris perintah yang akan membantu kita membuat proyek baru dan menjalankan server pengembangan lokal.
 

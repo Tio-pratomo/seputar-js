@@ -163,7 +163,7 @@ Docsify memungkinkan Anda menulis plugin kustom dengan mudah. Plugin adalah sebu
 window.$docsify = {
   plugins: [
     function (hook, vm) {
-      var footer = [
+      const footer = [
         "<hr/>",
         "<footer>",
         "  <span>Dibuat dengan &hearts; oleh Tim Anda.</span>",
