@@ -18,10 +18,10 @@ const config = {
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
-    /* experimental_faster: {
+    experimental_faster: {
       rspackBundler: true, // required flag
       rspackPersistentCache: true,
-    }, */
+    },
   },
 
   // Set the production url of your site here
@@ -29,12 +29,6 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
-
-  // Vercel deployment does not require GitHub pages specific configuration.
-  // organizationName: "facebook", // Usually your GitHub org/user name.
-  // projectName: "docusaurus", // Usually your repo name.
-
-  onBrokenLinks: "throw",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -44,14 +38,7 @@ const config = {
     locales: ["id"],
   },
 
-  markdown: {
-    mermaid: true,
-    hooks: {
-      onBrokenMarkdownLinks: "warn",
-    },
-  },
-
-  themes: ["@docusaurus/theme-mermaid"],
+  onBrokenLinks: "throw",
 
   presets: [
     [
@@ -60,6 +47,7 @@ const config = {
       ({
         docs: false,
         blog: false,
+        debug: false, // Disable debug features to avoid Rspack issues
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -122,7 +110,31 @@ const config = {
         sidebarPath: "./regexSidebars.js",
       },
     ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "astro",
+        path: "astro-js",
+        routeBasePath: "astro-js",
+        sidebarPath: "./astro-js-sidebars.js",
+      },
+    ],
+    [
+      "@docusaurus/plugin-debug", // Add debug plugin explicitly with debug disabled
+      {
+        debug: false,
+      }
+    ],
   ],
+
+  markdown: {
+    mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: "warn",
+    },
+  },
+
+  themes: ["@docusaurus/theme-mermaid"],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -178,6 +190,13 @@ const config = {
             label: "Regex",
             docsPluginId: "regex",
           },
+          {
+            type: "docSidebar",
+            sidebarId: "astroSidebar",
+            position: "left",
+            label: "Astro JS",
+            docsPluginId: "astro",
+          },
         ],
       },
       footer: {
@@ -205,6 +224,10 @@ const config = {
               {
                 label: "Regex",
                 to: "/regex/intro",
+              },
+              {
+                label: "Astro JS",
+                to: "/astro-js/intro",
               },
             ],
           },
