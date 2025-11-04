@@ -152,6 +152,45 @@ window.$docsify = {
 };
 ```
 
+#### e. Plugin Flexible Alerts
+
+Jika Anda ingin alerts yang lebih mirip Docusaurus tanpa HTML, gunakan docsify-plugin-flexible-alerts. Tambahkan ini di **index.html**:
+
+```html
+<!-- docsify-plugin-flexible-alerts -->
+<script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
+
+<script>
+  window.$docsify = {
+    "flexible-alerts": {
+      style: "callout", // bisa juga 'flat'
+    },
+  };
+</script>
+```
+
+Setelah itu, anda dapat menggunakan alerts di Markdown dengan sintaks seperti ini :
+
+```markdown
+> [!NOTE]
+> Ini adalah note dengan plugin flexible alerts.
+
+> [!TIP]
+> Tips menggunakan flexible alerts.
+
+> [!WARNING]
+> Peringatan penting!
+
+> [!DANGER]
+> Sangat berbahaya!
+
+> [!INFO]
+> Informasi tambahan.
+```
+
+Syntax ini kompatibel dengan GitHub dan akan ter-render dengan baik di GitHub maupun docsify.
+​
+
 ### (Bonus) Sekilas tentang Menulis Plugin Sendiri
 
 Docsify memungkinkan Anda menulis plugin kustom dengan mudah. Plugin adalah sebuah fungsi yang menerima objek `hook` dan `vm` (instance Docsify).
