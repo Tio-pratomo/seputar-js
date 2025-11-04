@@ -71,6 +71,19 @@
   gap: 1.5rem; /* gap-6 */
 }
 
+.documentation-card svg {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0; /* mencegah icon menyusut */
+  display: block; /* menghilangkan space bawah default inline */
+}
+
+.documentation-card {
+  display: flex;
+  align-items: flex-start; /* selaras di atas */
+  gap: 1rem;
+}
+
 .documentation-card {
   display: flex;
   flex-direction: column;
