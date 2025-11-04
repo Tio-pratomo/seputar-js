@@ -1,31 +1,67 @@
-import React from 'react';
+import React from "react";
 
 export default function WebpackIcon() {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       width="50"
       height="50"
-      viewBox="0 0 256 256"
-      className="webpack-icon"
+      viewBox="0 0 200 200"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <g fillRule="evenodd">
-        <path
-          fill="#8ED6FB"
-          d="M254.23 192.42L128 255.91 1.77 192.42l-.9-128.84L127.13.09l127.1 1.76z"
-        />
-        <path
-          fill="#1C78C0"
-          d="M232.14 179.94L128 237.12 23.86 179.94V65.41L128 8l104.14 57.41z"
-        />
-        <path
-          fill="#8ED6FB"
-          d="M210.05 167.47L128 218.33 45.95 167.47V66.53L128 15.67l82.05 50.86z"
-        />
-        <path
-          fill="#FFFFFF"
-          d="M195.27 158.5l-67.27 39.1-67.28-39.1V76.83l67.28-39.11 67.27 39.11z"
-        />
+      <defs>
+        <linearGradient id="lightBlue1" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style={{ stopColor: "#A8D8F0", stopOpacity: 1 }} />
+          <stop
+            offset="100%"
+            style={{ stopColor: "#7BC8E8", stopOpacity: 1 }}
+          />
+        </linearGradient>
+        <linearGradient id="lightBlue2" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style={{ stopColor: "#7BC8E8", stopOpacity: 1 }} />
+          <stop
+            offset="100%"
+            style={{ stopColor: "#A8D8F0", stopOpacity: 1 }}
+          />
+        </linearGradient>
+        <linearGradient id="darkBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style={{ stopColor: "#2874B5", stopOpacity: 1 }} />
+          <stop
+            offset="100%"
+            style={{ stopColor: "#1A5A8F", stopOpacity: 1 }}
+          />
+        </linearGradient>
+      </defs>
+
+      <path d="M 40 60 L 40 140 L 100 170 L 100 90 Z" fill="url(#lightBlue1)" />
+
+      <path
+        d="M 160 60 L 160 140 L 100 170 L 100 90 Z"
+        fill="url(#lightBlue2)"
+      />
+
+      <path d="M 100 30 L 40 60 L 100 90 L 160 60 Z" fill="url(#lightBlue1)" />
+
+      <path d="M 100 90 L 70 107 L 100 124 L 130 107 Z" fill="url(#darkBlue)" />
+
+      <path d="M 70 107 L 70 147 L 100 164 L 100 124 Z" fill="#2874B5" />
+
+      <path d="M 130 107 L 130 147 L 100 164 L 100 124 Z" fill="#1A5A8F" />
+
+      <g stroke="white" strokeWidth="6" fill="none" strokeLinejoin="miter">
+        <path d="M 100 30 L 160 60 L 160 140 L 100 170 L 40 140 L 40 60 Z" />
+
+        <line x1="100" y1="30" x2="100" y2="90" />
+        <line x1="40" y1="60" x2="100" y2="90" />
+        <line x1="160" y1="60" x2="100" y2="90" />
+        <line x1="100" y1="90" x2="100" y2="170" />
+
+        <path d="M 70 107 L 100 90 L 130 107" />
+        <line x1="70" y1="107" x2="70" y2="147" />
+        <line x1="130" y1="107" x2="130" y2="147" />
+        <line x1="70" y1="147" x2="100" y2="164" />
+        <line x1="130" y1="147" x2="100" y2="164" />
+        <line x1="100" y1="124" x2="70" y2="107" />
+        <line x1="100" y1="124" x2="130" y2="107" />
       </g>
     </svg>
   );
