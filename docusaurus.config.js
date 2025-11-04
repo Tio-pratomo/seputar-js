@@ -120,6 +120,15 @@ const config = {
       },
     ],
     [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "prettier",
+        path: "prettier",
+        routeBasePath: "prettier",
+        sidebarPath: "./prettierSidebars.js",
+      },
+    ],
+    [
       "@docusaurus/plugin-debug", // Add debug plugin explicitly with debug disabled
       {
         debug: false,
@@ -197,6 +206,13 @@ const config = {
             label: "Astro JS",
             docsPluginId: "astro",
           },
+          {
+            type: "docSidebar",
+            sidebarId: "prettierSidebar",
+            position: "left",
+            label: "Prettier",
+            docsPluginId: "prettier",
+          },
         ],
       },
       footer: {
@@ -228,6 +244,10 @@ const config = {
               {
                 label: "Astro JS",
                 to: "/astro-js/intro",
+              },
+              {
+                label: "Prettier",
+                to: "/prettier/intro",
               },
             ],
           },
