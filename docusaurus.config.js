@@ -132,7 +132,7 @@ const config = {
       "@docusaurus/plugin-debug", // Add debug plugin explicitly with debug disabled
       {
         debug: false,
-      }
+      },
     ],
   ],
 
@@ -144,7 +144,7 @@ const config = {
   },
 
   themes: ["@docusaurus/theme-mermaid"],
-
+  clientModules: [require.resolve("./src/shoelace.client.js")],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
