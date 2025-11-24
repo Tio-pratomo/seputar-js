@@ -14,6 +14,7 @@ const sidebars = {
         "PrettierDanEslint",
         "PrettierPlugin",
         "UseCasePraktis",
+        "CheatsheetMemulaiProjectJS",
       ],
     },
   ],
