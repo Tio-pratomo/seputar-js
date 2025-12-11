@@ -11,7 +11,7 @@ Astro adalah sebuah framework web modern yang dirancang untuk membangun website 
 
 ## Daftar Isi
 
-- [Sesi 1: Pengenalan Setup](./Sesi01-PengenalanSetup.md)
+- [Sesi 1: Pengenalan Setup](./Sesi01-PengenalanSetup.mdx)
 - [Sesi 2: Blog Styling](./Sesi02-BlogStyling.md)
 - [Sesi 3: Komponen Layouts](./Sesi03-KomponenLayouts.md)
 - [Sesi 4: React Interaktivitas](./Sesi04-ReactInteraktivitas.md)
