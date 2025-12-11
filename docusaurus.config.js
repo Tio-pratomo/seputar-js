@@ -283,7 +283,29 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
-        additionalLanguages: ["ini"],
+        additionalLanguages: [
+          // Markup (dependency untuk PHP)
+          "markup",
+
+          // Backend languages
+          "php",
+          "python",
+          "go",
+          "rust",
+          "java",
+          "csharp",
+          "typescript",
+
+          // Shell scripting
+          "bash",
+          "powershell",
+          "ini",
+
+          // Data formats
+          "json",
+          "yaml",
+          "toml",
+        ],
       },
     }),
 };
